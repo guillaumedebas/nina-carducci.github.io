@@ -120,6 +120,7 @@ class Carousel {
         // Dom Modification
         this.root = this.createDivWithClass('carousel')
         this.container = this.createDivWithClass('carousel__container')
+        this.container.setAttribute('aria-live', 'polite')
         this.root.setAttribute('tabindex', '0')
         this.root.appendChild(this.container)
         this.element.appendChild(this.root)
@@ -340,7 +341,8 @@ class Carousel {
     createButtonWithClassAndName(className, name) {
         let button = document.createElement('button')
         button.setAttribute('class', className)
-        button.textContent = name;
+        button.setAttribute('aria-label', name)
+        button.textContent = name
         return button
     }
 

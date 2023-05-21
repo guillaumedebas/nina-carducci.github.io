@@ -53,15 +53,20 @@
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.webp" alt="logo d'Instagram"></a></li>
+						target="_blank"><span> d'instagram</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path fill="currentColor" d="M256,49.471c67.266,0,75.233.257,101.8,1.469,24.562,1.121,37.9,5.224,46.778,8.674a78.052,78.052,0,0,1,28.966,18.845,78.052,78.052,0,0,1,18.845,28.966c3.45,8.877,7.554,22.216,8.674,46.778,1.212,26.565,1.469,34.532,1.469,101.8s-0.257,75.233-1.469,101.8c-1.121,24.562-5.225,37.9-8.674,46.778a83.427,83.427,0,0,1-47.811,47.811c-8.877,3.45-22.216,7.554-46.778,8.674-26.56,1.212-34.527,1.469-101.8,1.469s-75.237-.257-101.8-1.469c-24.562-1.121-37.9-5.225-46.778-8.674a78.051,78.051,0,0,1-28.966-18.845,78.053,78.053,0,0,1-18.845-28.966c-3.45-8.877-7.554-22.216-8.674-46.778-1.212-26.564-1.469-34.532-1.469-101.8s0.257-75.233,1.469-101.8c1.121-24.562,5.224-37.9,8.674-46.778A78.052,78.052,0,0,1,78.458,78.458a78.053,78.053,0,0,1,28.966-18.845c8.877-3.45,22.216-7.554,46.778-8.674,26.565-1.212,34.532-1.469,101.8-1.469m0-45.391c-68.418,0-77,.29-103.866,1.516-26.815,1.224-45.127,5.482-61.151,11.71a123.488,123.488,0,0,0-44.62,29.057A123.488,123.488,0,0,0,17.3,90.982C11.077,107.007,6.819,125.319,5.6,152.134,4.369,179,4.079,187.582,4.079,256S4.369,333,5.6,359.866c1.224,26.815,5.482,45.127,11.71,61.151a123.489,123.489,0,0,0,29.057,44.62,123.486,123.486,0,0,0,44.62,29.057c16.025,6.228,34.337,10.486,61.151,11.71,26.87,1.226,35.449,1.516,103.866,1.516s77-.29,103.866-1.516c26.815-1.224,45.127-5.482,61.151-11.71a128.817,128.817,0,0,0,73.677-73.677c6.228-16.025,10.486-34.337,11.71-61.151,1.226-26.87,1.516-35.449,1.516-103.866s-0.29-77-1.516-103.866c-1.224-26.815-5.482-45.127-11.71-61.151a123.486,123.486,0,0,0-29.057-44.62A123.487,123.487,0,0,0,421.018,17.3C404.993,11.077,386.681,6.819,359.866,5.6,333,4.369,324.418,4.079,256,4.079h0Z"/>
+							<path fill="currentColor" d="M256,126.635A129.365,129.365,0,1,0,385.365,256,129.365,129.365,0,0,0,256,126.635Zm0,213.338A83.973,83.973,0,1,1,339.974,256,83.974,83.974,0,0,1,256,339.973Z"/>
+							<circle fill="currentColor" cx="390.476" cy="121.524" r="30.23"/>
+						</svg></a></li>
 			</ul>
 		</header>
 	
-	<div id="carousel1">
-		<img src="./assets/images/slider/homme-affaires-traversant-passage-pieton-bordeaux.webp" alt="Un homme d'affaires traversant un passage piéton du boulevard Godard à Bordeaux">
-		<img src="./assets/images/slider/public-festival-bordeaux-rock-2020-salle-fetes-grand-parc-bordeaux.webp" alt="Le public heureux du Festival Bordeaux Rock 2020 à la Salle des Fêtes du Grand Parc de Bordeaux">
-		<img src="./assets/images/slider/baiser-romantique-jeunes-maries-salle-faiencerie-bordeaux-2022.webp" alt="Baiser romantique de deux jeunes mariés à la Salle de la Faïencerie à Bordeaux">
-	</div>
+		<div id="carousel1" role="list" aria-label="Carousel d'images">
+			<img src="./assets/images/slider/homme-affaires-traversant-passage-pieton-bordeaux.webp" alt="Un homme d'affaires traversant un passage piéton du boulevard Godard à Bordeaux" role="listitem" aria-posinset="1" aria-setsize="3">
+			<img src="./assets/images/slider/public-festival-bordeaux-rock-2020-salle-fetes-grand-parc-bordeaux.webp" alt="Le public heureux du Festival Bordeaux Rock 2020 à la Salle des Fêtes du Grand Parc de Bordeaux" role="listitem" aria-posinset="2" aria-setsize="3">
+			<img src="./assets/images/slider/baiser-romantique-jeunes-maries-salle-faiencerie-bordeaux-2022.webp" alt="Baiser romantique de deux jeunes mariés à la Salle de la Faïencerie à Bordeaux" role="listitem" aria-posinset="3" aria-setsize="3">
+		  </div>
+		  
 
 	<section id="about">
 		<img src="./assets/images/portrait-nina-carducci-photographe-professionnelle-bordeaux.webp" alt="Portrait de Nina Carducci, photographe professionnelle">
@@ -92,35 +97,62 @@
 			<button data-filter="mariage">Mariage</button>
 		</div>
 		<div class="gallery">
-			<a class="element concert" href="./assets/images/gallery/concerts/concert-festival-jalles-house-rock-saint-medard-en-jalles-2022.webp">
+			<a class="element concert" href="./assets/images/gallery/concerts/concert-festival-jalles-house-rock-saint-medard-en-jalles-2022.webp" aria-label="Photo durant un concert au festival Jalles House Rock à Saint-Médard-en-Jalles, le 9 juillet 2022" role="button" tabindex="0">
 				<img src="./assets/images/gallery/concerts/concert-festival-jalles-house-rock-saint-medard-en-jalles-2022.webp" alt="Photo durant un concert au festival Jalles House Rock à Saint-Médard-en-Jalles, le 9 juillet 2022">
-			</a>
-			<a class="element entreprise"
-				href="./assets/images/gallery/entreprise/homme-affaires-debout-bras-croises-place-bourse-bordeaux.webp">
+			  </a>
+			  <a class="element entreprise" href="./assets/images/gallery/entreprise/homme-affaires-debout-bras-croises-place-bourse-bordeaux.webp" aria-label="Un homme d'affaires debout, les bras croisés, sur la Place de la Bourse à Bordeaux" role="button" tabindex="0">
 				<img src="./assets/images/gallery/entreprise/homme-affaires-debout-bras-croises-place-bourse-bordeaux.webp" alt="Un homme d'affaires debout, les bras croisés, sur la Place de la Bourse à Bordeaux">
 			</a>
 			<a class="element entreprise"
-				href="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp">
-				<img src="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp" alt="Une employée souriante dans les bureaux de Cdiscount à Bordeaux">
-			</a>
-			<a class="element mariage" href="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp">
-				<img src="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp" alt="Les mains des mariés se rejoignent. Photo prise lors de leur mariage sur la plage de Bordeaux-Lac">
-			</a>
-			<a class="element portrait" href="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp">
-				<img src="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp" alt="Portrait de Richard Bona pour son album Lumière Natale, les yeux fermés et le visage illuminé">
-			</a>
-			<a class="element mariage" href="./assets/images/gallery/mariage/marc-sabine-shooting-mariage-jardin-botanique-bordeaux.webp">
+			href="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp" role="button" aria-label="Image d'une employée souriante dans les bureaux de Cdiscount à Bordeaux" tabindex="0">
+			<img src="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp" alt="Une employée souriante dans les bureaux de Cdiscount à Bordeaux">
+		 </a>
+		 
+		 <a class="element mariage"
+		 href="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp"
+		 role="button"
+		 aria-label="Image des mains des mariés se rejoignant lors de leur mariage sur la plage de Bordeaux-Lac"
+		 tabindex="0"
+	  >
+		 <img src="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp" alt="Les mains des mariés se rejoignent. Photo prise lors de leur mariage sur la plage de Bordeaux-Lac">
+	  </a>
+	  
+	  <a class="element portrait"
+	  href="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp"
+	  role="button"
+	  aria-label="Portrait de Richard Bona pour son album Lumière Natale, les yeux fermés et le visage illuminé"
+	  tabindex="0"
+   >
+	  <img src="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp" alt="Portrait de Richard Bona pour son album Lumière Natale, les yeux fermés et le visage illuminé">
+   </a>
+   
+			<a class="element mariage" href="./assets/images/gallery/mariage/marc-sabine-shooting-mariage-jardin-botanique-bordeaux.webp"
+			role="button"
+			aria-label="Jeunes mariés main dans la main lors d'un shooting de mariage au Jardin Botanique de Bordeaux"
+			tabindex="0">
 				<img src="./assets/images/gallery/mariage/marc-sabine-shooting-mariage-jardin-botanique-bordeaux.webp" alt="Jeunes mariés main dans la main lors d'un shooting de mariage au Jardin Botanique de Bordeaux">
 			</a>
+
 			<a class="element portrait"
-				href="./assets/images/gallery/portraits/jeune-fille-regard-melancolique-grillage-atelier-confiance-soi-CEF-Bordeaux.webp">
+				href="./assets/images/gallery/portraits/jeune-fille-regard-melancolique-grillage-atelier-confiance-soi-CEF-Bordeaux.webp"
+				role="button"
+			    aria-label="Jeune fille au regard mélancolique à l'atelier de confiance en soi pour jeunes du CEF Bordeaux"
+	            tabindex="0">
 				<img src="./assets/images/gallery/portraits/jeune-fille-regard-melancolique-grillage-atelier-confiance-soi-CEF-Bordeaux.webp" alt="Jeune fille au regard mélancolique à l'atelier de confiance en soi pour jeunes du CEF Bordeaux">
 			</a>
-			<a class="element concert" href="./assets/images/gallery/concerts/paco-rodriguez-gamine-chante-concert-grand-parc-bordeaux.webp">
+
+			<a class="element concert" href="./assets/images/gallery/concerts/paco-rodriguez-gamine-chante-concert-grand-parc-bordeaux.webp"
+			    role="button"
+			    aria-label="Paco Rodriguez de Gamine célèbre les 30 ans du groupe sur la scène du Grand Parc de Bordeaux"
+	            tabindex="0">
 				<img src="./assets/images/gallery/concerts/paco-rodriguez-gamine-chante-concert-grand-parc-bordeaux.webp" alt="Paco Rodriguez de Gamine célèbre les 30 ans du groupe sur la scène du Grand Parc de Bordeaux">
 			</a>
+
 			<a class="element entreprise"
-				href="./assets/images/gallery/entreprise/assistante-sociale-reunion-rire-colisee-france-bordeaux.webp">
+				href="./assets/images/gallery/entreprise/assistante-sociale-reunion-rire-colisee-france-bordeaux.webp"
+				role="button"
+			    aria-label="Une assistante sociale rit en réunion dans les locaux de Colisee France à Bordeaux"
+	            tabindex="0">
 				<img src="./assets/images/gallery/entreprise/assistante-sociale-reunion-rire-colisee-france-bordeaux.webp" alt="Une assistante sociale rit en réunion dans les locaux de Colisee France à Bordeaux">
 			</a>
 		</div>

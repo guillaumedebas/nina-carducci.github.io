@@ -126,14 +126,16 @@ isImageHidden(url) {
     buildDOM(url) {
         const dom = document.createElement('div')
         dom.classList.add('lightbox')
+        dom.setAttribute('arial-label', 'Lightbox')
         dom.innerHTML = `<button class="lightbox__close">Fermer</button>
 		<button class="lightbox__next">Suivant</button>
 		<button class="lightbox__prev">Précédent</button>
-		<div class="lightbox__container"></div>`
+		<div class="lightbox__container"></div>
+        <div class="lightbox__background"></div>`
         dom.querySelector('.lightbox__close').addEventListener('click', this.close.bind(this))
         dom.querySelector('.lightbox__next').addEventListener('click', this.next.bind(this))
         dom.querySelector('.lightbox__prev').addEventListener('click', this.prev.bind(this))
-        
+        dom.querySelector('.lightbox__background').addEventListener('click', this.close.bind(this))
         return dom
     }
 }
