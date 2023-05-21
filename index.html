@@ -1,158 +1,232 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<title>Photographe à Bordeaux : Nina Carducci</title>
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+	<script src="./assets/carousel.js" type="module" defer></script>
+	<script src="./assets/lightbox.js" type="module" defer></script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci",
+		  "url": "https://ninacarducci.github.io/",
+		  "image": "https://ninacarducci.github.io/assets/images/nina.png",
+		  "description": "Nina Carducci est une photographe professionnelle talentueuse, spécialisée dans la photographie événementielle, artistique et de portrait. Avec plusieurs années d'expérience, elle capture des instants uniques et émouvants tels que des mariages mémorables, des séances photo en famille chaleureuses, des shootings de grossesse remplis d'émotions, des clichés délicats de nouveau-nés et des prises de vue captivantes d'événements d'entreprise.
+		  En tant qu'experte en retouche et en traitement d'image, Nina Carducci sublime vos photos pour qu'elles soient les plus belles possibles. Elle propose également des services complémentaires tels que des albums photos personnalisés et des tirages de haute qualité pour préserver vos souvenirs de manière exceptionnelle.
+		  Choisir de collaborer avec Nina Carducci, c'est opter pour un service personnalisé et professionnel qui répondra pleinement à vos besoins et à vos envies. Sa passion, son savoir-faire et son engagement envers ses clients font d'elle une photographe d'exception, prête à créer des souvenirs intemporels pour vous et vos proches.",
+		  "priceRange" : "Tarif : 350€ par demi-journée",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "telephone": "05 56 67 78 89",
+		  "openingHours": [
+			"Mo-Fr 10:00-19:00"
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/"
+		  ]
+		}
+		</script>
 </head>
+
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
-		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt=""></a></li>
-		</ul>
+	<header>
+		<h1>Photographe à Bordeaux</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">À propos</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+				<li><a href="#services">Service</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+						target="_blank"><img src="assets/images/instagram.webp" alt="logo d'Instagram"></a></li>
+			</ul>
+		</header>
+	
+	<div id="carousel1">
+		<img src="./assets/images/slider/homme-affaires-traversant-passage-pieton-bordeaux.webp" alt="Un homme d'affaires traversant un passage piéton du boulevard Godard à Bordeaux">
+		<img src="./assets/images/slider/public-festival-bordeaux-rock-2020-salle-fetes-grand-parc-bordeaux.webp" alt="Le public heureux du Festival Bordeaux Rock 2020 à la Salle des Fêtes du Grand Parc de Bordeaux">
+		<img src="./assets/images/slider/baiser-romantique-jeunes-maries-salle-faiencerie-bordeaux-2022.webp" alt="Baiser romantique de deux jeunes mariés à la Salle de la Faïencerie à Bordeaux">
 	</div>
-</div>
-<div id="header">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	<section id="about">
+		<img src="./assets/images/portrait-nina-carducci-photographe-professionnelle-bordeaux.webp" alt="Portrait de Nina Carducci, photographe professionnelle">
+		<div class="square"></div>
+		<div class="content">
+			<h2>Nina Carducci</h2>
+			<p class="about-me__introduction">En tant que photographe professionnelle avec plusieurs années
+				d'expérience, je suis spécialisée dans la photographie événementielle, artistique et de portrait. </p>
+				<p>Je suis passionnée par la photographie et j'adore capturer les moments les plus beaux et les plus
+				émouvants, qu'il s'agisse d'un mariage, d'une séance photo en famille, d'un shooting de grossesse, de
+				nouveau-né, ou encore de prises de vue d'un événement d'entreprise.</p>
+			<p>Je suis une experte en retouche et en traitement d'image, ce qui me permet de garantir que vos photos
+				seront les plus belles possibles. Je propose également des albums photos personnalisés et des tirages de
+				haute qualité pour que vos souvenirs restent intacts.</p>
+			
+
+
 		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="...">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="...">
-			</div>
+	</section>
+
+	<section id="gallery">
+		<h2>Portfolio</h2>
+		<div class="filter">
+			<button class="active" data-filter="all">Tous</button>
+			<button data-filter="concert">Concert</button>
+			<button data-filter="portrait">Portrait</button>
+			<button data-filter="entreprise">Entreprise</button>
+			<button data-filter="mariage">Mariage</button>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-</div>
-<div id="about">
-	<div class="picture left">
-		<img src="./assets/images/nina.webp">
-	</div>
-	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
-</div>
-<div id="gallery">
-	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
-		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"/>
+		<div class="gallery">
+			<a class="element concert" href="./assets/images/gallery/concerts/concert-festival-jalles-house-rock-saint-medard-en-jalles-2022.webp">
+				<img src="./assets/images/gallery/concerts/concert-festival-jalles-house-rock-saint-medard-en-jalles-2022.webp" alt="Photo durant un concert au festival Jalles House Rock à Saint-Médard-en-Jalles, le 9 juillet 2022">
+			</a>
+			<a class="element entreprise"
+				href="./assets/images/gallery/entreprise/homme-affaires-debout-bras-croises-place-bourse-bordeaux.webp">
+				<img src="./assets/images/gallery/entreprise/homme-affaires-debout-bras-croises-place-bourse-bordeaux.webp" alt="Un homme d'affaires debout, les bras croisés, sur la Place de la Bourse à Bordeaux">
+			</a>
+			<a class="element entreprise"
+				href="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp">
+				<img src="./assets/images/gallery/entreprise/employee-souriante-bureaux-cdiscount-bordeaux.webp" alt="Une employée souriante dans les bureaux de Cdiscount à Bordeaux">
+			</a>
+			<a class="element mariage" href="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp">
+				<img src="./assets/images/gallery/mariage/mains-mathieu-laura-mariage-plage-bordeaux-lac.webp" alt="Les mains des mariés se rejoignent. Photo prise lors de leur mariage sur la plage de Bordeaux-Lac">
+			</a>
+			<a class="element portrait" href="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp">
+				<img src="./assets/images/gallery/portraits/portrait-richard-bona-lumiere-natale-yeux-fermes-soleil.webp" alt="Portrait de Richard Bona pour son album Lumière Natale, les yeux fermés et le visage illuminé">
+			</a>
+			<a class="element mariage" href="./assets/images/gallery/mariage/marc-sabine-shooting-mariage-jardin-botanique-bordeaux.webp">
+				<img src="./assets/images/gallery/mariage/marc-sabine-shooting-mariage-jardin-botanique-bordeaux.webp" alt="Jeunes mariés main dans la main lors d'un shooting de mariage au Jardin Botanique de Bordeaux">
+			</a>
+			<a class="element portrait"
+				href="./assets/images/gallery/portraits/jeune-fille-regard-melancolique-grillage-atelier-confiance-soi-CEF-Bordeaux.webp">
+				<img src="./assets/images/gallery/portraits/jeune-fille-regard-melancolique-grillage-atelier-confiance-soi-CEF-Bordeaux.webp" alt="Jeune fille au regard mélancolique à l'atelier de confiance en soi pour jeunes du CEF Bordeaux">
+			</a>
+			<a class="element concert" href="./assets/images/gallery/concerts/paco-rodriguez-gamine-chante-concert-grand-parc-bordeaux.webp">
+				<img src="./assets/images/gallery/concerts/paco-rodriguez-gamine-chante-concert-grand-parc-bordeaux.webp" alt="Paco Rodriguez de Gamine célèbre les 30 ans du groupe sur la scène du Grand Parc de Bordeaux">
+			</a>
+			<a class="element entreprise"
+				href="./assets/images/gallery/entreprise/assistante-sociale-reunion-rire-colisee-france-bordeaux.webp">
+				<img src="./assets/images/gallery/entreprise/assistante-sociale-reunion-rire-colisee-france-bordeaux.webp" alt="Une assistante sociale rit en réunion dans les locaux de Colisee France à Bordeaux">
+			</a>
 		</div>
-	</div>
-	<div class="quote">
-		<figure>
-			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
-			</blockquote>
-			<figcaption class="quote__author">- Richard Avedon</figcaption>
-		</figure>
-	</div>
-</div>
-<div id="services">
-	<h3 class="title">Mes services</h3>
-	<div class="container">
-		<div class="service">
-			<div class="service__description">
+
+	</section>
+
+
+
+	<section id="services">
+		<h2 class="title">Mes services</h2>
+		<div class="container">
+			<article class="service">
 				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
-			</div>
+				<p class="service-description">Faites appel à une photographe professionnelle pour réaliser votre séance photo en studio ou en extérieur à Bordeaux et ses alentours.</p>
+				<p class="service-rate">Tarif : 350€ par demi-journée</p>
+				<p class="service-detail">Matériel et déplacement inclus</p>
+			</article>
+
+
+
+			<article class="service">
+				<h3>Retouches photo</h3>
+				<p class="service-description">Obtenez un résultat professionnel pour vos publications en faisant appel à mes services de retouche photo. Que vous souhaitiez corriger des défauts ou sublimer une image, je m'occupe de tout.</p>
+
+				<p class="service-rate">Tarif : 50€ par photo</p>
+				<p class="service-detail">2 allers-retours par photo inclus</p>
+			</article>
+
+			<article class="service">
+				<h3>Album photo</h3>
+				<p class="service-description">Offrez à vos proches ou à vos clients un souvenir inoubliable des moments partagés ensemble grâce à un album photo personnalisé. Je crée pour vous un album de qualité professionnelle, qui raconte votre histoire.</p>
+				<p class="service-rate">Tarif : 400€ pour un album A4</p>
+				<p class="service-detail">30 pages recto et verso incluses</p>
+			</article>
 
 		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+
+
+	</section>
+
+	<section id="how">
+		<h2>Comment choisir le bon photographe ?</h2>
+
+		<p>Le choix d'un photographe pour vos événements marquants est crucial pour capturer les moments les plus
+			importants et garder de merveilleux souvenirs de ces moments uniques.
+		</p>
+		<p>Pour choisir le bon photographe, assurez-vous que ses photos correspondent à votre style, qu'il a de
+			l'expérience dans la photographie, qu'il sait s'adapter aux imprévus et que vous vous sentez à l'aise avec
+			lui.
+		</p>
+		<p>En me choisissant, vous aurez non seulement des photos de qualité professionnelle pour vos événements, mais
+			aussi une photographe à l'écoute de vos besoins et de vos envies. Contactez-moi dès maintenant pour en
+			savoir plus sur mes prestations et pour réserver votre date.
+		</p>
+	</section>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>J'ai à cœur de satisfaire mes clients et de créer des souvenirs inoubliables pour les moments les plus
+			précieux de leur vie. Contactez-moi pour une séance photo ou pour discuter de votre projet de photographie,
+			je serai ravie de vous accompagner dans cette aventure.</p>
+		<div class="container">
+			<div class="form-container">
+
+				<p>Une question ? Une demande de devis ? Je vous répondrais en moins de 24 heures</p>
+				<form action="#" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" placeholder="Exemple : Peter Parker" name="nom" id="nom">
+					<label for="email">Email</label>
+					<input type="email" placeholder="Exemple :  peter.parker@dailybugle.com" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" placeholder="Exemple : Salut,
+J'ai un ami super-héro qui aurait besoin de photos de ses exploits pour son fan-club.
+Serait-il possible que vous l'aidiez ?
+Cordialement, 
+Peter" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
 			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
-			</div>
+							<img src="./assets/images/appareil-photo-argentique-penombre.webp" alt="Un ancien appareil photo argentique dans la pénombre - L'expérience pour éclairer vos futurs projet">
+		<div class="before-contact"></div>
 		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
-			</div>
+	</section>
+
+	<footer>
+		<div class="footer-col">
+		  <h2>Adresse</h2>
+		  <p>68 avenue Alsace-Lorraine</p>
+		  <p>33200 Bordeaux</p>
 		</div>
-	</div>
-</div>
-<div class="quote">
-	<figure>
-		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</div>
-<div id="contact">
-	<div class="container">
-		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
-				<label>Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
-				<label>Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
+		<div class="footer-col">
+		  <h2>Téléphone</h2>
+		  <p>05 56 67 78 89</p>
+		  <p>Du lundi au vendredi de 10h à 19h</p>
 		</div>
-		<div class="picture right">
-			<img src="./assets/images/camera.webp">
+		<div class="footer-col">
+		  <h2>Navigation</h2>
+		  <ul>
+			<li><a href="#">Accueil</a></li>
+			<li><a href="#">Galerie</a></li>
+			<li><a href="#">Tarifs</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
 		</div>
-	</div>
-</div>
+	  </footer>
+	  
 </body>
+
 </html>
