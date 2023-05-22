@@ -681,10 +681,7 @@ footer {
 		width: 90vw;
 	}
 
-	#about p {
-		min-width: 25ch;
-	  }
-
+	/* */
 	.square {
 		display: none;
 	}
