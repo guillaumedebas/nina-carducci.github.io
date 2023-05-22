@@ -248,12 +248,9 @@ nav a {
 	flex: 1;
 	margin-left: 1rem;
 	z-index: 3;
-	overflow: hidden;
   }
 
   #about p {
-	max-width: 80ch;
-	min-width: 50ch;
 	line-height: 2rem;
   }
   
