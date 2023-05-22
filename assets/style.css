@@ -313,6 +313,7 @@ nav a {
 
 .gallery img {
     width: 100%;
+	height: auto;
     aspect-ratio: 100/100;
     object-fit: cover;
 	display: block;
