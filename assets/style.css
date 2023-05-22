@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 html {
@@ -30,7 +29,7 @@ body {
 
 
 * {
-	font-family: 'Inter';
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
 	font-style: normal;
 	box-sizing: border-box;
 }
@@ -252,14 +251,11 @@ nav a {
 
 
   .about-me__introduction {
-	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;	
 	
   }
   
-
-
 
 #gallery {
 	display: flex;
@@ -510,7 +506,9 @@ align-self: start;
 }
 
 #contact .container img {
+	align-self: center;
 	max-height: 390px;
+	max-width: 390px;
 	z-index: 2;
 }
 .before-contact {
@@ -613,19 +611,6 @@ footer {
     to {opacity: 1;}
 }
 
-@media all and (max-width: 1180px) {
-	#about img {
-		flex : 2;
-	}
-	#about, #contact .container {
-		align-items: center;
-	}
-	}
-	#about-me h6, #about-me p {
-		width: 100%;
-	}
-
-
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
@@ -636,9 +621,6 @@ footer {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.about-me__title{
-		margin-top: 1em;
-	}
 	#services .container {
 		flex-direction: column;
 	}
@@ -662,17 +644,11 @@ footer {
 	#contact .container {
 		flex-direction: column;
 	}
-	#contact .picture.right {
-		margin-top: 1em;
-	}
-	.picture.right::before {
+
+	.before-contact {
 		width: 100%;
-		height: 30%;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: -1;
 	}
+	
 } 
 
 
@@ -705,10 +681,7 @@ footer {
 	.carousel__pagination {
         display: none;
     }
-	.picture.left::before, .picture.right::before {
-		height: 150px;
-	}
-
+	
 	.filter {
 		display: flex;
 		flex-wrap: wrap;
@@ -717,12 +690,12 @@ footer {
 
 	.gallery {
 		grid-template-columns: 1fr;
-		
 	}
 
 	#services .container {
 		align-items: center;
 	}
+
 	.service {
 		max-width: 90%;
 	}
@@ -731,6 +704,7 @@ footer {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
@@ -738,3 +712,4 @@ footer {
 	#contact .container img {
 		width: 90vw;
 	}
+}
