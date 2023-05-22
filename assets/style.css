@@ -370,7 +370,7 @@ nav a {
 }
 
 .lightbox__close {
-    background: url(/assets/images/close-square.svg) center center / 100% 100%;
+    background: url(/assets/images/i-close-square.svg) center center / 100% 100%;
     right: 5%;
     top: 5%;
     z-index: 12;
