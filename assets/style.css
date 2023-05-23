@@ -625,7 +625,15 @@ footer {
 
 	}
 
-	
+	#about img {
+		width: 80%;
+		height: 80%;
+
+	}
+
+	.about-me {
+		width:80%;
+	}	
 
 	.gallery {
 		grid-template-columns: 1fr 1fr;
@@ -677,16 +685,6 @@ footer {
 		text-align: center;
 	}
 	
-	#about img {
-		width: 80%;
-		height: 80%;
-
-	}
-
-	.about-me {
-		width:80%;
-	}
-
 	.square {
 		display: none;
 	}
