@@ -150,10 +150,13 @@ nav a {
 	
 }
 .carousel__item img {
-	width: 100%;
-	height: auto;
+	--img-width: 100%; 
+	--img-height: auto;
+	width: var(--img-width);
+	height: var(--img-height);
+	object-fit: cover; 
 	overflow: hidden;
-}
+  }
 
 .carousel__next, .carousel__prev {
 	border: 0;
