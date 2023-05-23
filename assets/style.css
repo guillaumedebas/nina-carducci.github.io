@@ -150,7 +150,7 @@ nav a {
 	
 }
 .carousel__item img {
-	width: 100%;
+	aspect-ratio: attr(width) / attr(height);
 	overflow: hidden;
 }
 
