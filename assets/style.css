@@ -151,7 +151,6 @@ nav a {
 }
 .carousel__item img {
 	width: 100%;
-	aspect-ratio: 1134/520;
 	overflow: hidden;
 }
 
