@@ -120,6 +120,8 @@ export class Carousel {
         // Dom Modification
         this.root = this.createDivWithClass('carousel')
         this.container = this.createDivWithClass('carousel__container')
+        this.container.setAttribute('role', 'list')
+        this.container.setAttribute('aria-label', "Carousel d'images")
         this.container.setAttribute('aria-live', 'polite')
         this.root.setAttribute('tabindex', '0')
         this.root.appendChild(this.container)
