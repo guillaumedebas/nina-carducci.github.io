@@ -8,9 +8,9 @@ class CarouselTouchPlugin {
      * @param {Carousel} carousel 
      */
     constructor(carousel) {
-        carousel.container.addEventListener('dragstart', e => e.preventDefault())
-        carousel.container.addEventListener('mousedown', this.startDrag.bind(this))
-        carousel.container.addEventListener('touchstart', this.startDrag.bind(this))
+        carousel.container.addEventListener('dragstart', e => e.preventDefault(), {passive: true})
+        carousel.container.addEventListener('mousedown', this.startDrag.bind(this), {passive: true})
+        carousel.container.addEventListener('touchstart', this.startDrag.bind(this), {passive: true})
         window.addEventListener('mousemove', this.drag.bind(this), {passive: true})
         window.addEventListener('touchmove', this.drag.bind(this), {passive: true})
         window.addEventListener('touchend', this.endDrag.bind(this), {passive: true})
