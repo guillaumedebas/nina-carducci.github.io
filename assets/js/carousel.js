@@ -127,6 +127,7 @@ export class Carousel {
         this.items = children.map((child) => {
             let item = this.createDivWithClass('carousel__item')
             item.appendChild(child)
+            item.setAttribute('role', 'listitem')
             return item
         })
         if (this.options.infinite) {
