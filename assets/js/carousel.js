@@ -8,7 +8,7 @@ class CarouselTouchPlugin {
      * @param {Carousel} carousel 
      */
     constructor(carousel) {
-        carousel.container.addEventListener('dragstart', e => e.preventDefault(), {passive: true})
+        carousel.container.addEventListener('dragstart', e => e.preventDefault())
         carousel.container.addEventListener('mousedown', this.startDrag.bind(this), {passive: true})
         carousel.container.addEventListener('touchstart', this.startDrag.bind(this), {passive: true})
         window.addEventListener('mousemove', this.drag.bind(this), {passive: true})
@@ -43,7 +43,6 @@ class CarouselTouchPlugin {
             let point = e.touches ? e.touches[0] : e
             let translate = { x: point.screenX - this.origin.x, y: point.screenY - this.origin.y }
             if(e.touches && Math.abs(translate.x) > Math.abs(translate.y)) {
-                e.preventDefault()
                 e.stopPropagation()
             } 
             let baseTranslate = this.carousel.currentItem * -100 / this.carousel.items.length
